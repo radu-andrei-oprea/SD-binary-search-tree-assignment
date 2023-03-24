@@ -1,0 +1,24 @@
+RADU ANDREI OPREA - 335 CB
+
+
+In implementarea informatiilor ne folosim de doua structuri: Dir si File. In timp ce nodurile contin informatii legate de vecini, cele doua structuri tin in evidenta numele unui nod, parintele nodului si spatiile de stocare pentru  fisere sau directoare. Indicii celor doua in program sunt 0 pentru directoare si 1 pentru fisiere. 
+In cadrul diferitelor comenzi: se vor separa mereu spatiul de fisiere cu cel de subdirectoare ale unui nod, delimitand pointeri. 
+
+Implementarea ABC este asemanatoare celei din laborator, cu exceptia ca acum informatia este ori un director, ori un nume de fisier. Dupa introducere sau stergere a unui nod, ordinea valorilor este modificata, pentru a pastra forma de Arbore binar de cautare. Fiecare nod va avea o frunza de valoare mai mica in stanga si mai mare in dreapta.
+
+
+Pentru a evita conflicte, se va citi tot inputul si stocat intr-un array de char**. Se vor lua pe rand comenzile si se executa.
+
+Cateva functii ajutatoare au fost folosite, printre care o versiune rudimentarea proprie de strcat, pentru a evita probleme cu strtok. Functiile getPath este cea care poate sa gaseasca path-ul, prin parcurgerea tatilor. Functiile de extragere fisier si fila sunt folosite pentru functia find. In cazul in care se gaseste obiectul dorit, se va afisa intregul path al sau.
+
+Functia quickSearch se foloseste in principal pentru detectarea unui element intr-un arbore, cum ar fi un fisier cu nume de director. In cazul in care avem de exemplu un folder cu numele "f2", iar cineva doreste sa creeze un fisier cu numele f2. Aceasta functie previne asta.
+
+pointTo indica folderul dorit pe care il cautam la folosire "cd".
+
+La final, pentru "ls", se folosesc array-uri de nume, urmand sa fie parcurse si sortate, urmand sa fie afisate, mai intai directoarele, pe urma fisierele.
+
+
+
+Probleme intampinate: probleme in cadrul functiei de find si rmdir pentru eliberare; instabilitatea functiei strtok ce a ingreunat procesul scrierii temei.
+
+Tema a fost trimisa cu cateva ore peste deadline. Va rog sa ma iertati pentru intarziere, intrucat am nevoie de punctajul aferent temei pentru promovare.
